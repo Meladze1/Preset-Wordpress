@@ -1,0 +1,146 @@
+// Customizing Bootstrap with Sass variables:
+// https://getbootstrap.com/docs/5.0/customize/sass/
+
+// $primary: #276fc2;
+// $secondary: #e8d21d;
+// $border-radius: 1px;
+
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+/* ======= Amenities style ======= */
+.amenities {
+  position: relative;
+}
+.amenities .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-box-align: center;
+  border-radius: 6px !important;
+  -webkit-transition: all 350ms cubic-bezier(.37, 0, .63, 1);
+  transition: all 350ms cubic-bezier(.37, 0, .63, 1);
+  background-color: #fff;
+}
+.amenities .item .cont {
+  padding-left: 10% !important;
+  padding-bottom: 13% !important;
+  padding-right: 10% !important;
+  padding-top: 13% !important;
+}
+.amenities .item .cont .icon i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 15px;
+  font-size: 50px;
+  color: #BD945A;
+  justify-content: center !important;
+}
+.amenities .item .cont .text h5 {
+  display: inline-block !important;
+  font-size: 21px;
+  font-weight: 400;
+  color: #141414;
+  margin-bottom: 10px;
+}
+.amenities .item .cont .text p {
+  font-family: "Urbanist", sans-serif;
+  font-size: 17px;
+  line-height: 1.5em;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 0;
+  padding: 0 0;
+}
+.amenities .item .cont.up {
+  will-change: transform;
+  -webkit-transform: translateY(30px);
+  transform: translateY(30px);
+}
+.amenities .item .cont.up .text-visible {
+  opacity: 0;
+}
+.amenities .item.hover-box * {
+  -webkit-transition: all .5s cubic-bezier(.5, 1, .89, 1);
+  transition: all .5s cubic-bezier(.5, 1, .89, 1);
+  will-change: transform;
+}
+.amenities .item:hover {
+  background: #BD945A;
+}
+.amenities .item:hover .cont h5,
+.amenities .item:hover .cont .icon i {
+  color: #fff
+}
+.amenities .item:hover .cont.up {
+  -webkit-transform: translateY(0);
+  transform: translateY(0)
+}
+.amenities .item:hover .cont.up .text-visible {
+  opacity: 1
+}
+.bg-lightbrown {
+  background-color: #f4f1ed;
+}
+.section-padding {
+  padding: 120px 0;
+}
+.amenities {
+  position: relative;
+}
+.section-subtitle {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 400;
+  margin-bottom: 10px;
+  color: #BD945A;
+  font-size: 15px;
+  align-items: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.section-title {
+  font-family: "Gilda Display", serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 50px;
+  color: #141414;
+  position: relative;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+.mb-25 {
+  margin-bottom: 25px !important;
+}
+.button-3 {
+  display: inline-block;
+  height: auto;
+  padding: 12px 27px;
+  border: 1px solid #BD945A;
+  border-radius: 5px;
+  background-color: #BD945A;
+  color: #fff;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 30px;
+  transition: border-color 300ms ease, transform 300ms ease, background-color 300ms ease, color 300ms ease;
+  transform-style: preserve-3d;
+}
+span, a, a:hover {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
